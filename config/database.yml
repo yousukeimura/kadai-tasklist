@@ -19,7 +19,7 @@ default: &default
 
 development:
   <<: *default
-  database: message-board_development
+  database: tasklist
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: message-board_production
+  database: tasklist
   username: message-board
   password: <%= ENV['MESSAGE-BOARD_DATABASE_PASSWORD'] %>
